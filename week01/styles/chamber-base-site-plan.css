@@ -1,0 +1,175 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  /* -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; */
+  box-sizing: border-box;
+}
+
+/* color palette url - https://coolors.co/f4806a-523a34-8a8e55-fbb04c-8390c8 */
+/* font-family: 'Merriweather', serif;
+  font-family: 'Source Serif Pro', serif; */
+
+:root {
+  --primary-color: #f4806a;
+  --secondary-color: #523a34;
+  --accent1-color: #8a8e55;
+  --accent2-color: #fbb04c;
+  --accent3-color: #8390c8;
+
+  --heading-font: "Source Serif Pro", serif;
+  --paragraph-font: "Merriweather", serif;
+
+  --headline-color-on-white: #3c787e; /* headlines on a white background */
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */
+  --paragraph-color-on-white: #3c787e; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: #3c787e;
+  --nav-link-color: #000000;
+  --nav-background-color: #8b8c89;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #d7fef2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1,
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+.nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(8, 12%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas:
+    ". . . home home . . ."
+    ". . . . top . . ."
+    ". left left center1 center2 right right ."
+    "page2 page2 . page4 page4 . page3 page3";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page4 {
+  grid-area: page4;
+  background-color: #999;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.center1 {
+  grid-area: center1;
+  border-top: 1px solid;
+}
+.center2 {
+  grid-area: center2;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+.accent3 {
+  background-color: var(--accent3-color);
+}
