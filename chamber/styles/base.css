@@ -1,0 +1,282 @@
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /*----------- apply a natural box layout model to all elements --------------*/
+  * {
+    /* -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+  }
+  
+  /* color palette url - https://coolors.co/f4806a-523a34-8a8e55-fbb04c-8390c8 */
+  /* font-family: 'Merriweather', serif;
+    font-family: 'Source Serif Pro', serif; */
+  
+  :root {
+    --primary-color: #f4806a;
+    --secondary-color: #523a34;
+    --accent1-color: #8a8e55;
+    --accent2-color: #fbb04c;
+    --accent3-color: #8390c8;
+  
+    --heading-font: "Source Serif Pro", serif;
+    --paragraph-font: "Merriweather", serif;
+  
+    --headline-color-on-white: #3c787e; /* headlines on a white background */
+    --headline-color-on-color: #ffffff; /* headlines on a colored background */
+    --paragraph-color-on-white: #3c787e; /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: #3c787e;
+    --nav-link-color: #000000;
+    --nav-background-color: #8b8c89;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #d7fef2;
+  }
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .header {
+    display: flex;
+    grid-gap: 10px;
+    margin: 20px 0 0 0;
+    position:n ;
+    left: 20px;
+  }
+  .header h1 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    display: flex;
+  }
+  .logo-img {
+    width: 90px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .headings {
+    justify-content: center;
+  }
+  .m {
+    letter-spacing: 1pt;
+    color: var(--accent1-color);
+    font-weight: 70;
+    font-size: 0.8rem;
+    
+  }
+  .social {
+    margin-right: 0.5em;
+    display: flex;
+    padding: 5px;
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  .social img {
+    width: 30px;
+    height: auto;
+    border-radius: 1em;
+  }
+  header,
+  footer {
+  color: var(--headline-color-on-color);
+  font-weight: bold;
+  background-color: var(--primary-color);
+  }
+  main figure.hero {
+    width: 100%;
+    /* border: 1px red dashed; */
+    margin: 0 0 0 0;
+    /* height: 250px; */
+  }
+
+  nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+/* small view navigation */
+#hamburgerBtn {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+#hamburgerBtn::before {
+	content: "☰";
+}
+
+#hamburgerBtn.open::before {
+	content: "X";
+}
+
+.primaryNav {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+.primaryNav li {
+	display: none;
+}
+.primaryNav li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.primaryNav li a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+.primaryNav li a.active {
+    font-weight: bold;
+    color: #0077FF; 
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+/* .active::before {
+	content: "📍 ";
+} */
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+  }
+  
+  #hero-box {
+    grid-column: 1/3;
+    grid-row: 1;
+    z-index: -1;
+  }
+  
+  #hero-msg {
+    grid-column: 1/3;
+    grid-row: 1;
+    margin-top: 0;
+  }
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+  .map {
+    width: 30px;
+    height: auto;
+  }
+  main section h1.home-title {
+    color:var(--secondary-color);
+    text-shadow: 5px 5px 10px #6f7364;
+    padding-left: 30px;
+  }
+  main .button-box {
+    background-color:var(--primary-color);
+    width: max-content;
+    padding: 10px;
+    margin-left: 30px;
+    /* margin-left: ; */
+    border-radius: 1rem;
+    text-shadow: 5px 5px 10px #6f7364;
+  }
+  
+  main figure.hero {
+    width: 100%;
+    /* border: 1px red dashed; */
+    margin: 0 0 0 0;
+    /* height: 250px; */
+  }
+  main figure.hero img {
+    width: 100%;
+    height: 250px;
+  }
+  main .w {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+
+  main .events {
+    background-color: var(--accent1-color);
+    padding: 20px;
+    height: auto;
+    margin-top: 15px;
+  }
+  h1, h2, h3, h4, h5{
+    font-family: var(--heading-font);
+  }
+  p {
+    font-family: var(--paragraph-font);
+  }
+  main #spot {
+    background-color: var(--accent2-color);
+    height: 400px;
+    margin-top: 15px;
+  }
+
+
+  /* .weather1 img {
+    width: 50%;
+    float: left;
+    margin-top: -60px;
+    mix-blend-mode: overlay;
+  } */
+
+  
+
+  main {
+    display: block;
+    grid-gap: 10px;
+    font-size: 1rem;
+    height: auto;
+    padding: 50px;
+  }
+
+footer {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+  }
+
+footer div {
+  margin-top: 15px;
+}
+
+
+
+  
+

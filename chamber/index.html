@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikoyi Chamber Home page</title>
+    <meta name="description" content="Chamber of Commerce Home Page">
+    <meta name="author" content="Henry Arinze Ohia">
+    <meta property="og:title" content="Chamber home page" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://www.chamber.com/my-page-url/" >
+    <meta property="og:image" content="https:/github.com/Henryohia/wdd230/blob/main/images/rsz_2img_me.jpg?raw=true" >
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!-- <div class="logo"> -->
+              <!-- <picture>
+                <img class="logo-img" src="" alt="logo" />
+              </picture> -->
+              <div class="headings">
+                <h1>Ikoyi Chamber</h1>
+                <q class="m">Chamber of Commerce</q>
+              </div>
+            </div>
+            <div class="social">
+              <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon" >
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon" >
+              </a>
+            </div>
+    </header>
+
+    <nav>
+        <button id="hamburgerBtn"></button>
+        <ul class="primaryNav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+
+    <main>
+        <div id="hero">
+            <div id="hero-box">
+              <figure class="hero">
+                <!-- <source
+                  media="(min-width: 800px)"
+                  srcset="images/wdd230-org-medium..jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcset="images/wdd230-org-large.jpg"
+                /> -->
+                <img
+                  id="hero-img"
+                  src="images/rsz_rsz_1pexels-tiger-lily-7109292.jpg"
+                  alt="business partners"
+                  sizes="100vw"
+                  loading="lazy"
+                  srcset="images/rsz_1pexels-tiger-lily-7109292.jpg 800w"
+                >
+              </figure>
+            </div>
+            <section id="hero-msg">
+              <h1 class="home-title">Welcome to The Ikoyi Chamber Of Commerce</h1>
+              <div class="button-box">
+                <a class="book" href="contactus.html">Join the Chamber</a>
+              </div>
+            </section>
+          </div>
+    
+          <section class="w">
+            <h2 class="weather">Weather</h2>
+            <!-- the DIV that will contain the widget -->
+            <div class="weather1">
+              <div>
+                <img src="" alt="" id="weather-icon" >
+              </div>
+              <div>
+                <h3><span id="current-temp"></span>&#176;F</h3>
+                <!-- <h3 id="condition"></h3> -->
+                <br />
+                <span>Wind speed: </span><span id="wind-speed"></span
+                    ><span>mph</span><br /><span>Wind Chill:</span
+                    ><span id="result"></span><span>&#176;F</span>
+              </div>
+            </div>
+          </section>
+    
+          <section class="events">
+            <h2>Current Events</h2>
+            <h3>Lionel Messi wins the 2023 Men's Ballon d'Or</h3>
+            <p>
+                Messi officially took home the 2023 Ballon d'Or on Monday evening, being selected to win the award 
+                for an eighth time in his career. His triumph at the 2022 World Cup in Qatar not only put an 
+                exclamation mark on a career for the ages, but realistically it catapulted him back into contention 
+                for the Ballon d'Or trophy.
+            </p>
+          </section>
+
+          <section id="spot"></section>
+    </main>
+
+    <footer>
+        <!-- <img class="f-logo" src="" alt="logo" /> -->
+      <div class="ikoyi">
+        <h2>Ikoyi Chamber</h2>
+        <p>#4 Jimoh Akinsaya Close</p>
+        <p>Arepo, Lagos, Nigeria</p>
+      </div>
+      <div class="info">
+        <p>Henryohia197@gmail.com</p>
+        <p>+234-7081313909</p>
+        <img class="map" src="images/rsz_2location.png" alt="map-img" >
+        <a href="https://maps.app.goo.gl/kDJwxbXYgkbzYqhg6" target="_blank"
+          >Location Map</a>
+      </div>
+      <div></div>
+
+      <hr />
+      <div class="base">
+        <div class="sub-base">
+          <!-- <p>&copy;2023 | Henry Arinze Ohia | Lagos, Nigeria</p> -->
+          <div class="copyright"><span id="copyright"></span></div>
+          <h3>Henry Arinze Ohia</h3>
+          <p>WDD 230 Project</p>
+        </div>
+        <div id="lastModified"></div>
+      </div>
+    </footer>
+    <script src="scripts/hamburgerBtn.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/date-time.js"></script>
+
+</body>
+</html>
