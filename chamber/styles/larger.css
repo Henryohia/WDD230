@@ -52,9 +52,7 @@ nav ul li a {
     border-top: none;
   }
   nav {
-    width: 100%;
-  /* grid-column: 3/6; */
-  /* grid-row: 1; */
+    display: contents;
 }
 .social {
   grid-column: 6/7;
