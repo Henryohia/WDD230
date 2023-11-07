@@ -2,36 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Henry Arinze Ohia - WDD 230 - Web Frontend Development</title>
     <meta
       name="description"
-      content="WDD 230 - Web Frontend Development, course assignment portal"
-    />
-    <meta name="author" content="Henry Arinze Ohia" />
-    <meta property="og:title" content="My-portal" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.myportal.com/my-page-url/" />
-    <meta property="og:image" content="https://github.com/Henryohia/wdd230/blob/main/images/rsz_2img_me.jpg?raw=true" />
+      content="WDD 230 - Web Frontend Development, course assignment portal">
+    <meta name="author" content="Henry Arinze Ohia">
+    <meta property="og:title" content="My-Home-page" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://henryohia.github.io/wdd230/" >
+    <meta property="og:image" content="https://github.com/Henryohia/wdd230/blob/main/images/rsz_2img_me.jpg?raw=true" >
+    
     <link rel="icon" href="favicon.ico">
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/large.css" >
 
   </head>
   <body>
-    <header>
-      <img src="images/rsz_2img_me.jpg" alt="My-photo" /><img />
+    <header> 
+      <img src="images/rsz_2img_me.jpg" alt="My-photo" ><img >
       <h1>Henry Arinze Ohia</h1>
+      <div id="mode">
+        🕶️
+      </div>
     </header>
 
     <nav>
-      <a href="" class="active">Home</a><a href="">Chamber</a
-      ><a href="https://henryohia.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a><a href="">Form</a>
+      <button id="hamburgerBtn"></button>
+      <ul class="primaryNav">
+        <li><a href="https://henryohia.github.io/wdd230/" class="active">Home</a></li>
+        <li><a href="https://henryohia.github.io/chamber/">Chamber</a></li>
+        <li><a href="https://henryohia.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="">Form</a></li>
+      </ul>
     </nav>
 
     <main>
@@ -71,13 +79,15 @@
         <!-- <img src="images/placeholder.png" alt="weather placeholder"> -->
         <p>Placeholder for the weather display.</p>
       </section>
+      
     </main>
 
     <footer>
       <div class="copyright"><span id="copyright"></span></div>
-      <!-- <p>&copy;2023 | Henry Arinze Ohia | Lagos, Nigeria</p> -->
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/hamburgerBtn.js"></script>
   </body>
 </html>

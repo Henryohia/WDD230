@@ -25,6 +25,28 @@
     border-radius: 1.2em;
     text-shadow: 5px 5px 10px #6f7364;
   }
+  header {
+    display: grid;
+    
+  }
+  .headings h1 {
+      font-weight:bolder;
+      font-size: 2rem;
+  }
+
+
+  #hamburgerBtn {
+  display: none; /* hide hamburger button */
+}
+
+.primaryNav {
+  flex-direction: row;
+}
+
+.primaryNav li {
+  display: block;
+  flex: 1 1 100%;
+}
   footer {
     background-color: darksalmon;
     text-shadow: 5px 5px 10px #6f7364;
@@ -33,9 +55,7 @@
   }
 
   nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+    display: contents;
   }
 
   main {
