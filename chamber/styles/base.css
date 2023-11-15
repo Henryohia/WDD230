@@ -1,9 +1,4 @@
 
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-  }
   
   /*----------- apply a natural box layout model to all elements --------------*/
   * {
@@ -235,10 +230,10 @@ header {
     height: auto;
     margin-top: 15px;
   }
-  h1, h2, h3, h4, h5{
+  h1, h2, h3, h4, h5 {
     font-family: var(--heading-font);
   }
-  p {
+  body p {
     font-family: var(--paragraph-font);
   }
   main #spot {
@@ -276,7 +271,73 @@ footer div {
   margin-top: 15px;
 }
 
+/* ------------------- discover ----------------------------- */
+main.discover {
+  /* background-color: antiquewhite; */
+  margin: 10px 10px 10px 10px;
+  display: grid;
+  justify-items: center;
+}
+
+main.discover div.demo, main.discover div.demo1, main.discover div.demo2 {
+  /* border: 1px solid salmon; */
+  width: 100%;
+  background-color: var(--accent3-color);
+  box-shadow: 5px 5px 10px #6f7364;
+  padding: 30px;
+  margin-top: 20px;
+}
+main.discover div.demo h1 {
+  box-sizing: border-box;
+  /* font-family: var(--heading-font); */
+  font-weight: bolder;
+  text-align: center;
+  margin: 0 auto;
+}
+main.discover div.demo p {
+  /* background-color: var(--accent2-color); */
+  /* padding: 5px 5px 5px 5px; */
+  text-align:justify;
+  border-radius: 1rem;
+  /* font-family: var(--paragraph-font); */
+  /* width: 95%; */
+  margin: 20px;
+}
+main.discover div figure img {
+  border: 1px solid rebeccapurple;
+  transition: transform 0.5s;
+  box-shadow: 5px 5px 10px #6f7364;
+  max-width: 600px;
+}
+main.discover div.demo figcaption {
+  background-color: aliceblue;
+  position: relative;
+  padding: 10px;
+  margin-top: 10px;
+}
+main.discover div.demo figure {
+  /* width: 50%; */
+  margin: 0;
+}
 
 
+section.mosaic {
+  display: none;
+}
+
+.hover {
+  max-width: 490px;
+}
+
+#visits {
+  color: var(--secondary-color);
+  font-weight: bolder;
+  font-size: larger;
+}
+.label {
+  font-weight: 700;
+  color: var(--secondary-color);
+  background-color: rgba(200, 200, 255, 0.3);
   
+}
 
