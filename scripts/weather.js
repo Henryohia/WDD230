@@ -20,7 +20,7 @@ function displayResults(weatherData) {
   const currentTemperature = weatherData.main.temp.toFixed(0);
   const windSpeed = weatherData.wind.speed.toFixed(0);
   const currentCondition = weatherData.weather[0].description;
-  const weatherIcon = document.getElementById("weather-icon");
+  const weatherIcon = document.querySelector("#weather-icon");
   const iconSrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`;
   const desc = weatherData.weather[0].description;
 
