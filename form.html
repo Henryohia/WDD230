@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Henry Arinze Ohia - WDD 230 - Web Frontend Development</title>
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development, course assignment portal">
+    <meta name="author" content="Henry Arinze Ohia">
+    <meta property="og:title" content="My-Home-page" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://henryohia.github.io/wdd230/" >
+    <meta property="og:image" content="https://github.com/Henryohia/wdd230/blob/main/images/rsz_2img_me.jpg?raw=true" >
+    
+    <link rel="icon" href="favicon.ico">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/large.css" >
+    <link rel="stylesheet" href="styles/form.css" >
+
+  </head>
+  <body>
+    <header> 
+      <img src="images/rsz_2img_me.jpg" alt="My-photo">
+      <h1>Henry Arinze Ohia</h1>
+      <div id="mode">
+        🕶️
+      </div>
+    </header>
+
+    <nav>
+      <button id="hamburgerBtn"></button>
+      <ul class="primaryNav">
+        <li><a href="https://henryohia.github.io/wdd230/" class="active">Home</a></li>
+        <li><a href="https://henryohia.github.io/chamber/">Chamber</a></li>
+        <li><a href="https://henryohia.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="">Form</a></li>
+      </ul>
+    </nav>
+
+    <main>	
+        <form action="record.html" method="get">
+          <fieldset>
+            <legend>FORM</legend>
+            <label id="u">Username* <input type="text" name="username" required></label>
+            <label id="p">Password* <input type="password" name="password" pattern="[A-Za-z]{3}" title="at least eight (8) characters & alpha-numeric" required></label>
+            <label id="p2">Re-enter Your password* <input type="password" name="password" pattern="[A-Za-z]{3}" title="Re-enter your password" required></label>
+            <label id="e">Email* <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+            <label for="r">Rating</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="r" name="r" min="1" max="10" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </datalist>
+
+
+          </fieldset>
+
+          <input type="submit" value="Enter" class="submitBtn" >
+        </form>
+
+      
+      
+    </main>
+  
+    <footer>
+      <div class="copyright"><span id="copyright"></span></div>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/hamburgerBtn.js"></script>
+    <script src="scripts/localstorage.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/form.js"></script>
+    
+    
+  </body>
+</html>
