@@ -295,7 +295,8 @@
   main.discover div.demo, main.discover div.demo1, main.discover div.demo2 {
     /* border: 1px solid salmon; */
     width: 100%;
-    background-color: var(--accent3-color);
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
     box-shadow: 5px 5px 10px #6f7364;
     padding: 30px;
     margin-top: 20px;
