@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikoyi Chamber of Commerce Home page</title>
+    <meta name="description" content="Chamber of Commerce Home Page">
+    <meta name="author" content="Henry Arinze Ohia">
+    <meta property="og:title" content="Chamber home page" >
+    <meta property="og:type" content="Page" >
+    <meta property="og:url" content="https://www.chamber.com/my-page-url/" >
+    <meta property="og:image" content="https://github.com/Henryohia/wdd230/blob/main/images/rsz_2img_me.jpg?raw=true" >
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!-- <div class="logo"> -->
+              <!-- <picture>
+                <img class="logo-img" src="" alt="logo" />
+              </picture> -->
+              <div class="headings">
+                <h1>Ikoyi Chamber of Commerce</h1>
+                <q class="m">Chamber of Commerce</q>
+              </div>
+            </div>
+            <div class="social">
+              <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon" >
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon" >
+              </a>
+            </div>
+    </header>
+
+    <nav>
+        <button id="hamburgerBtn"></button>
+        <ul class="primaryNav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+
+    <main class="join">
+      <h1>Membership Application Form</h1>
+      <form action="thankyou.html" method="get">
+        <fieldset>
+          <legend>Applicant submission</legend>
+          <label class="top">
+            First Name* <input type="text" name="fname" required
+          ></label>
+          <label class="top">
+            Last Name* <input type="text" name="lname" required
+          ></label>
+          <label class="top">
+            Business Position Title
+            <input
+              id="position"
+              type="text"
+              name="position"
+              pattern="^[a-zA-Z -]{7,}$"
+          ></label>
+          <label class="top">
+            Phone*
+            <input type="tel" name="phone" placeholder="2347081313909" required
+          ></label>
+          <label class="top">
+            Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="henryohia197@gmail.com"
+              required
+          ></label>
+          <label class="top">
+            Business Name* <input type="text" name="bname" required
+          ></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Membership Level</legend>
+          <div>There are four membership levels</div>
+          <label class="sbs">
+            <input type="radio" name="audience" value="np" >NP Membership is
+            for non profit organizations and there is no fee.
+          </label>
+          <label class="sbs">
+            <input type="radio" name="audience" value="bronze" >Bronze
+            Membership.
+          </label>
+          <label class="sbs">
+            <input type="radio" name="audience" value="silver" >Silver
+            Membership
+          </label>
+          <label class="sbs">
+            <input type="radio" name="audience" value="gold" >Gold Membership
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Description</legend>
+          <label class="top"
+            ><input type="hidden" id="date" name="date" value="CurrentDate" >
+            <input type="hidden" id="time" name="time" value="CurrentTime"
+          ></label>
+
+          <label for="describe" class="top"
+            >Business Description
+            <textarea
+              name="describe"
+              id="describe"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <input
+          type="submit"
+          value="Apply Now"
+          onclick="validateForm()"
+          class="submitBtn"
+        >
+      </form>
+
+    </main>
+
+    <footer>
+        <!-- <img class="f-logo" src="" alt="logo" /> -->
+      <div class="ikoyi">
+        <h2>Ikoyi Chamber</h2>
+        <p>#4 Jimoh Akinsaya Close</p>
+        <p>Arepo, Lagos, Nigeria</p>
+      </div>
+      <div class="info">
+        <p>Henryohia197@gmail.com</p>
+        <p>+234-7081313909</p>
+        <img class="map" src="images/rsz_2location.png" alt="map-img" >
+        <a href="https://maps.app.goo.gl/kDJwxbXYgkbzYqhg6" target="_blank"
+          >Location Map</a>
+      </div>
+      <div></div>
+
+      <hr >
+      <div class="base">
+        <div class="sub-base">
+          <!-- <p>&copy;2023 | Henry Arinze Ohia | Lagos, Nigeria</p> -->
+          <div class="copyright"><span id="copyright"></span></div>
+          <h3>Henry Arinze Ohia</h3>
+          <p>WDD 230 Project</p>
+        </div>
+        <div id="lastModified"></div>
+      </div>
+    </footer>
+    <script src="scripts/hamburgerBtn.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/date-time.js"></script>
+
+</body>
+</html>

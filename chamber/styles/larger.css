@@ -267,6 +267,14 @@ nav ul li a {
       /* grid-row: 1; */
     }
 
+    form label.sbs {
+      padding: 0.4rem 0;
+    }
+    main.join {
+      display: block;
+      align-items: center;
+    }
+
   
   
     
