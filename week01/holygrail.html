@@ -15,6 +15,10 @@
   <div class="left-sidebar" contenteditable>Left Sidebar</div>
   <main contenteditable></main>
   <div class="right-sidebar" contenteditable>Right Sidebar</div>
-  <footer contenteditable>Footer Content — Header.com</footer>
+  <footer contenteditable>Footer Content — Header.com <span id="currentDate"></span></footer>
 </body>
+<script>
+    const options = {weekday: "long", day: "numeric", month: "long", year: "numeric"};
+    document.getElementById("currentDate").textContent = new Date().toLocaleDateString("en-Us", options);
+</script>
 </html>
