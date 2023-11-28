@@ -1,0 +1,29 @@
+{
+    "name": "Brown",
+    "date": 2021,
+    "number_of_records": "xxxxxxxxx",
+    "visited_by_bishopric": "Yes",
+    "family_members": [
+        {
+            "name": "Victor Brown",
+            "Gender": "Male",
+            "birthdate": 1990
+        },
+        {
+            "name": "Shiela Brown",
+            "Gender": "Female",
+            "birthdate": 1991
+        },
+        {
+            "name": "Alexa Brown",
+            "Gender": "Female",
+            "birthdate": 2020
+        },
+        {
+            "name": "Anetta Brown",
+            "Gender": "Female",
+            "birthdate": 2020
+        }
+    ]
+
+}
