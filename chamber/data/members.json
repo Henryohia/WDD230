@@ -1,0 +1,123 @@
+{
+    "companies": [
+      {
+        "companyName": "United Bank for Africa",
+        "address": "UBA House, 57 Marina, Lagos, Lagos State, Nigeria",
+        "phone": 2347002255822,
+        "level": "Diamond",
+        "image": "https://www.ubagroup.com/wp-content/uploads/2018/06/UBA-Logo.svg",
+        "website": "http://www.ubagroup.com/",
+        "order": 1
+      },
+      {
+        "companyName": "Miniso",
+        "address": "176, 194 Obafemi Awolowo Way, Alausa 101233, Ikeja, Lagos",
+        "phone": 234015150640,
+        "level": "Gold",
+        "image": "https://www.miniso.com/Content/EN/images/logo.png",
+        "website": "http://www.miniso.com/",
+        "order": 2
+      },
+      {
+        "companyName": "Innoson Vehicle Manufacturing",
+        "address": "No 95 Owerri Road, P.O. Box 1068, Umudim, Nnewi, Anambra State",
+        "phone": 2348037222939,
+        "level": "Gold",
+        "image": "https://www.innosonvehicles.com/wp-content/uploads/2018/04/innoson-ivm-logo.png",
+        "website": "https://www.innosonvehicles.com/",
+        "order": 3
+      },
+      {
+        "companyName": "UPS",
+        "address": "UPS EXPRESS CENTRE (IKEJA PALACE) 64 TOYIN STREET,IKEJA, IKEJA,",
+        "phone": 23412713605,
+        "level": "Silver",
+        "image": "https://www.ups.com/assets/resources/images/UPS_logo.svg",
+        "website": "https://www.ups.com/ng/en/Home.page",
+        "order": 4
+      },
+      {
+        "companyName": "Indomie",
+        "address": "44 Jimoh Odutola Street Off Eric Moore Road, Surulere, Lagos, Nigeria",
+        "phone": 2347004636643,
+        "level": "Silver",
+        "image": "https://indomie.ng/wp-content/uploads/2020/04/indomie-new.png",
+        "website": "https://indomie.ng/",
+        "order": 5
+      },
+      {
+        "companyName": "Gloworld",
+        "address": "1, Mike Adenuga Close, Off Adeola Odeku Street, Victoria Island, Lagos. Nigeria.",
+        "phone": 2348050020121,
+        "level": "Gold",
+        "image": "https://www.gloworld.com/logo.png",
+        "website": "http://www.gloworld.com/",
+        "order": 6
+      },
+      {
+        "companyName": "Shell Petroleum Development Company of Nigeria Ltd.",
+        "address": "Freeman House, 21/22 Marina, PMB 2418, Lagos, Nigeria",
+        "phone": 2348070269999,
+        "level": "Diamond",
+        "image": "data:image/png;base64,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",
+        "website": "https://www.shell.com.ng/",
+        "order": 7
+      },
+      {
+        "companyName": "Access Bank",
+        "address": "14/15, Prince Alaba Abiodun, Oniru Road, Victoria Island, Lagos, Nigeria.",
+        "phone": 2347003000000,
+        "level": "Gold",
+        "image": "https://www.accessbankplc.com/Content/images/access-lg-logo.png",
+        "website": "https://www.accessbankplc.com/",
+        "order": 8
+      },
+      {
+        "companyName": "Golden Penny",
+        "address": "3, LEKKI BEACH ROAD, JAKANDE AROUND LEKKI AJAH LEKKI LAGOS",
+        "phone":  2347056892000,
+        "level": "Bronze",
+        "image": "https://www.fmnfoods.com/wp-content/uploads/2020/05/logo.png",
+        "website": "https://www.fmnfoods.com/",
+        "order": 9
+      },
+      {
+        "companyName": "Airtel",
+        "address": "Plot L2 Banana Island, Foreshore Estate, Ikoyi Lagos, Nigeria.",
+        "phone": 2348021500111,
+        "level": "Gold",
+        "image": "https://www.airtel.com.ng/assets/images/airtel-logo.png",
+        "website": "https://www.airtel.com.ng/",
+        "order": 10
+      },
+      {
+        "companyName": "Andron Homes",
+        "address": "75, Andron Court, Adeyemo Akapo, Victoria Island, Lagos. Nigeria.",
+        "phone": 2348050020121,
+        "level": "N/A",
+        "image": "data:image/png;base64,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",
+        "website": "https://adronhomesproperties.com/",
+        "order": 11
+      },
+      {
+        "companyName": "TotalEnergies Marketing Nigeria",
+        "address": "1 Sobo Arobiodu St, Ikeja GRA 101233, Lagos, Nigeria",
+        "phone": 2348050020121,
+        "level": "Silver",
+        "image": "https://services.totalenergies.ng/sites/all/themes/custom/totalenergy_theme/logo.png",
+        "website": "https://services.totalenergies.ng/",
+        "order": 12
+      },
+      {
+        "companyName": "BYU-Pathway Worldwide",
+        "address": "Rexburg, Idaho, US",
+        "phone": "Undisclosed",
+        "level": "Non-profit",
+        "image": "https://www.byupathway.org/byu-pw-stackedgray-svg.svg",
+        "website": "https://www.byupathway.org/",
+        "order": 13
+        
+      }
+      
+    ]
+  }
