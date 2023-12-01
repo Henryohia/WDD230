@@ -56,9 +56,12 @@ nav ul li a {
 }
 .social {
   grid-column: 6/7;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
   
-    /* ul#primaryNav {
+    ul#primaryNav {
       display: flex;
       margin-block: 2vw;
     }
@@ -66,7 +69,7 @@ nav ul li a {
     header {
       font-size: 1.3rem;
       display: flex;
-    } */
+    }
     /* ********************************************** */
   
     #hero {
@@ -128,7 +131,7 @@ nav ul li a {
     hr {
       display: none;
     }
-    /* ********************************************************** */
+    /* ******************* Discover *************************************** */
   
     /* hover effect */
     .hover:hover {
@@ -274,6 +277,23 @@ nav ul li a {
       display: block;
       align-items: center;
     }
+
+    /* ---------- directory -------- */
+
+    main.directory{
+      display: block;
+    }
+    main.directory div.cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      font-size: 0.8rem;
+      width: 100%;
+      grid-gap: 50px;
+      /* align-items: center; */
+      /* margin: 0 auto; */
+      /* justify-content: space-around; */
+    }
+  
 
   
   

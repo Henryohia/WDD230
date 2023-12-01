@@ -43,7 +43,7 @@
       display: flex;
       margin: 0 auto;
       padding: 0;
-      justify-content: space-around;
+      /* justify-content: space-around; */
   }
 
   .header h1 {
@@ -74,7 +74,7 @@
     display: flex;
     padding: 5px;
     grid-gap: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-right: 50px;
   }
 
@@ -440,7 +440,7 @@
 
    /* ------------------- directory ------------- */
 
-   main div.cards {
+   main.directory div.cards {
     text-align: center;
     margin: 10px 10px 20px 10px;
     padding: 10px;
@@ -449,8 +449,10 @@
   
   main div.cards section {
     border: solid 2px tan;
-    background-color: var(--accent2-color);
+    /* background-color: var(--accent2-color); */
     height: auto;
+    margin: 20px;
+    padding: 10px;
   }
   
   main div.cards img {
@@ -464,4 +466,37 @@
   a {
     text-decoration: underline;
   }
+
+  ::selection {
+    color: var(--headline-color-on-color);
+    background: var(--secondary-color);
+  }
+  ::marker { 
+    color: var(--accent3-color);
+    font-size: 23px;
+  }
+  /* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: var(--accent1-color);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--nav-link-color);
+  /* background-color: var(--nav-hover-link-color); */
+
+}
+
+/* selected link */
+a:active {
+  color: var(--accent3-color);
+}
+a.highlight:hover {
+  color: #ff0000;
+}
 

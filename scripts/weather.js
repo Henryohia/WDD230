@@ -1,11 +1,11 @@
 const weatherUrl =
-  "http://api.openweathermap.org/data/2.5/weather?q=Lagos&units=imperial&appid=717322181629e29430787aee4177448c";
+"http://api.openweathermap.org/data/2.5/weather?q&lat=6.62&lon=3.34&units=imperial&appid=717322181629e29430787aee4177448c";
 async function apiFetch() {
   try {
     const response = await fetch(weatherUrl);
     if (response.ok) {
       const data = await response.json();
-      // console.log(data);
+      console.log(data);
       displayResults(data);
     } else {
       throw Error(await response.text());
@@ -14,6 +14,7 @@ async function apiFetch() {
     console.log(error);
   }
 }
+
 apiFetch();
 
 function displayResults(weatherData) {
