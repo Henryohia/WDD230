@@ -34,7 +34,9 @@ const displayCompanies = (companies) => {
     // a.setAttribute("src", company.website);
 
     //
+    a.rel = "preconnect";
     a.textContent = `${company.website}`;
+    
 
     // Build the image portrait by setting all the relevant attribute
     portrait.setAttribute("src", company.image);
