@@ -28,7 +28,7 @@ async function getLinks() {
 
       week.links.forEach(link => {
         const listItem = document.createElement("li");
-        listItem.innerHTML=`<a href="${link.url}">${link.title}</a>`
+        listItem.innerHTML=`<a href="${link.url}">${link.title} | </a>`
         linksList.appendChild(listItem)
         }) // end links for assignments
         

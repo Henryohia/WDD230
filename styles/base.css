@@ -159,6 +159,11 @@ section.card {
   margin: 20px;
   padding: 30px;
 }
+section.card ul {
+  display: flex;
+  /* font-size: small; */
+}
+
 section.card2 {
   border-radius: 0.5em;
   box-shadow: 5px 5px 10px #6f7364;

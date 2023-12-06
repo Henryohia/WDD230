@@ -5,11 +5,11 @@
             "links": [
                 {
                 "url": "https://henryohia.github.io/wdd230/week01/holygrail.html",
-                "title": "Holy Grail"
+                "title": "Holy-Grail"
             },
             {
                 "url": "https://henryohia.github.io/wdd230/week01/media-query.html",
-                "title": "Media Query"
+                "title": "Media-Query"
             }
             ]
         },
@@ -18,7 +18,7 @@
             "links": [
                 {
                 "url": "https://henryohia.github.io/wdd230/week02/design.html",
-                "title": "Web Design Principles"
+                "title": "Web-Design"
             },
             {
                 "url": "https://codepen.io/Henryohia/pen/mdvEwMw",
@@ -43,7 +43,7 @@
             },
             {
                 "url": "https://henryohia.github.io/wdd230/week03/responsive-images.html",
-                "title": "Responsive Images"
+                "title": "Responsive-Img"
             }
             ]
         },
@@ -52,7 +52,7 @@
             "links": [
                 {
                 "url": "https://codepen.io/Henryohia/pen/jOdzzJY",
-                "title": "Pseudo-class"
+                "title": "Pseudo-cl"
             },
             {
                 "url": "week04/images/combinators.jpg",
@@ -73,7 +73,7 @@
             "links": [
                 {
                 "url": "https://codepen.io/Henryohia/pen/xxMJROb",
-                "title": "Pseudo-element"
+                "title": "Pseudo-ele"
             },
             {
                 "url": "week5/new-ward-members.json",
@@ -81,11 +81,11 @@
             },
             {
                 "url": "https://henryohia.github.io/wdd230/week05/prophets.html",
-                "title": "Fetch API"
+                "title": "Fetch-API"
             },
             {
                 "url": "https://henryohia.github.io/wdd230/week05/weather.html",
-                "title": "Weather API"
+                "title": "Weather-API"
             }
             ]
         }
