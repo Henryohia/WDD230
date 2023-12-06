@@ -1,5 +1,5 @@
 const weatherUrl =
-  "http://api.openweathermap.org/data/2.5/weather?q=Lagos&units=imperial&appid=717322181629e29430787aee4177448c";
+  "https://api.openweathermap.org/data/2.5/weather?q=Lagos&units=imperial&appid=717322181629e29430787aee4177448c";
 async function apiFetch() {
   try {
     const response = await fetch(weatherUrl);
