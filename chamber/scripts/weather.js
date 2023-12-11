@@ -44,37 +44,37 @@ function displayResults(weatherData) {
   }
 }
 
-const forecastURL =
-  "https://api.openweathermap.org/data/2.5/forecast?q=Lagos&units=imperial&appid=717322181629e29430787aee4177448c";
-async function apiFetch1() {
-  try {
-    const response = await fetch(forecastURL);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-      displayForecast(data);
-    } else {
-      throw Error(await response.text());
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
-apiFetch1();
+// const forecastURL =
+//   "https://api.openweathermap.org/data/2.5/forecast?q=Lagos&units=imperial&appid=717322181629e29430787aee4177448c";
+// async function apiFetch1() {
+//   try {
+//     const response = await fetch(forecastURL);
+//     if (response.ok) {
+//       const data = await response.json();
+//       console.log(data);
+//       displayForecast(data);
+//     } else {
+//       throw Error(await response.text());
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// apiFetch1();
 
 
-function displayForecast(forecastURL) {
+// function displayForecast(forecastURL) {
 
-  // Extract and display three-day forecast data
-   const forecast = forecastURL.list.slice(0, 21);
-   const weatherContainer = document.getElementById('forecast');
-   weatherContainer.innerHTML += `
-     <h2>Three-Day Forecast</h2>
-     <ul>
-       ${forecast.map(entry => `<li>${entry.dt_txt}: ${entry.main.temp}°F</li>`).join('')}
-     </ul>
-   `;
+//   // Extract and display three-day forecast data
+//    const forecast = forecastURL.list.slice(0, 21);
+//    const weatherContainer = document.getElementById('forecast');
+//    weatherContainer.innerHTML += `
+//      <h2>Three-Day Forecast</h2>
+//      <ul>
+//        ${forecast.map(entry => `<li>${entry.dt_txt}: ${entry.main.temp}°F</li>`).join('')}
+//      </ul>
+//    `;
 
-}
+// }
 
 
