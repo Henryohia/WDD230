@@ -38,6 +38,12 @@
             </div>
 
         <div class="date"></div>
+        <!-- Banner HTML -->
+        <div id="banner">
+          <span id="close-btn" onclick="closeBanner()">❌</span>
+          <p>🤝🏼 Join us at the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+        </div>
+
     </header>
 
     <nav>
@@ -85,16 +91,17 @@
             <!-- the DIV that will contain the widget -->
             <div class="weather1">
               <div>
-                <!-- <img src="" alt="" id="weather-icon" >\ -->
+                <img src="" alt="" id="weather-icon" >\
               </div>
               <div>
                 <h3><span id="current-temp"></span>&#176;F</h3>
-                <!-- <h3 id="condition"></h3> -->
+                <h3 id="condition"></h3>
                 <br>
                 <span>Wind speed: </span><span id="wind-speed"></span
                     ><span>mph</span><br><span>Wind Chill:</span
                     ><span id="result"></span><span>&#176;F</span>
               </div>
+              <div id="forecast"></div>
             </div>
           </section>
     
@@ -142,6 +149,9 @@
     <script src="scripts/hamburgerBtn.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/date-time.js"></script>
+    <script src="scripts/spotlights.js"></script>
+    <script src="scripts/banner.js"></script>
+
 
 </body>
 </html>

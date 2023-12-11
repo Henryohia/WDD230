@@ -30,3 +30,4 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute("alt", desc);
   
 }
+

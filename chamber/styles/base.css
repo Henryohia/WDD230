@@ -501,3 +501,23 @@ a.highlight:hover {
   color: #ff0000;
 }
 
+ /*----------------- banner -------------------------------------*/
+
+ #banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#close-btn {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
