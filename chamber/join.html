@@ -21,7 +21,7 @@
         <div class="header">
             <div class="logo">
               <picture>
-                <img class="logo-img" src="images/Ikoyi.webp" alt="logo" />
+                <img class="logo-img" src="images/Ikoyi.webp" alt="logo" >
               </picture>
               <div class="headings">
                 <h1>Ikoyi Chamber of Commerce</h1>
@@ -36,7 +36,13 @@
                 <img src="images/instagram.png" alt="instagram icon" >
               </a>
             </div>
-    </header>
+          </div>
+            <!-- Banner HTML -->
+        <div id="banner">
+          <span id="close-btn" onclick="closeBanner()">❌</span>
+          <p>🤝🏼 Join us at the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+        </div>
+      </header>
 
     <nav>
         <button id="hamburgerBtn"></button>
@@ -107,7 +113,7 @@
         <fieldset>
           <legend>Description</legend>
           <label class="top"
-            ><input type="hidden" id="date" name="date" value="CurrentDate" >
+            ><input type="hidden" id="date" name="today" value="xxx" >
             </label>
 
           <label for="describe" class="top"
@@ -161,6 +167,7 @@
     <script src="scripts/hamburgerBtn.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/date-time.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 </html>

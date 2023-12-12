@@ -10,20 +10,20 @@ fetch(myWeather)
   .then((response) => response.json())
   .then((allData) => {
     console.log(allData.list)
-    forcastWeatherB(allData.list)
+    forecastWeatherB(allData.list)
   }) // end waiting
 
 //Use filter to extract an array of noon times.
-function forcastWeatherA(weatherResults) {
+function forecastWeatherA(weatherResults) {
 //   console.log(weatherResults)
-  console.log(weatherResults[0].dt_txt.substring(11, 13))
+  // console.log(weatherResults[0].dt_txt.substring(11, 13))
   const noonTimes = weatherResults.filter(result => result.dt_txt.substring(11, 13) == '00');
   showForecast(noonTimes)
 //   console.log(noonTimes)
 }
 
 //use a for each loop to find all noon times
-function forcastWeatherB(weatherResults) {
+function forecastWeatherB(weatherResults) {
   let noontimes2=[]
   weatherResults.forEach((listItem) => {
     console.log(listItem.dt_txt)
@@ -36,9 +36,9 @@ function forcastWeatherB(weatherResults) {
 }
 
 // Display three day forecast from an array
-function showForecast(forcastdays) {  
+function showForecast(forecastDays) {  
   const forecast = document.querySelector('#forecast')
-  forcastdays.forEach((day) => {
+  forecastDays.forEach((day) => {
     //console.log(day)
 
     const myTemperature=document.createElement('p')
