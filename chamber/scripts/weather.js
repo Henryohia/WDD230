@@ -21,15 +21,15 @@ function displayResults(weatherData) {
   const currentTemperature = weatherData.main.temp.toFixed(0);
   const windSpeed = weatherData.wind.speed.toFixed(0);
   const currentCondition = weatherData.weather[0].description;
-  const weatherIcon = document.getElementById("weather-icon");
+  // const weatherIcon = document.createElement("img");
   const iconSrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`;
   const desc = weatherData.weather[0].description;
 
   document.getElementById("current-temp").innerHTML = currentTemperature;
   document.getElementById("wind-speed").innerHTML = windSpeed;
   document.getElementById("condition").innerHTML = currentCondition;
-  weatherIcon.setAttribute("src", iconSrc);
-  weatherIcon.setAttribute("alt", desc);
+  // weatherIcon.setAttribute("src", iconSrc);
+  // weatherIcon.setAttribute("alt", desc);
   windChill = (
     35.74 +
     0.6215 * currentTemperature -

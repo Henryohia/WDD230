@@ -8,7 +8,7 @@ async function getCompanyData() {
 }
 
 const displayCompanies = (companies) => {
-  const cards = document.querySelector("div.cards"); // output container element
+  const cards = document.querySelector("div#cards"); // output container element
 
   companies.forEach((company) => {
     // elements to add to the div.cards element
@@ -45,6 +45,26 @@ const displayCompanies = (companies) => {
     portrait.setAttribute("width", "250");
     portrait.setAttribute("height", "auto");
 
+    // const myLevel = document.createElement('img')
+    // switch(company.level) {
+    //   case 1:
+    //     myLevel.src = "./images/level-bronze.png"
+    //     myLevel.alt="Bronze"
+    //     break;
+    //   case 2:
+    //     myLevel.src = "./images/level-silver.png"
+    //     myLevel.alt="Silver"
+    //     break;
+    //     case 3:
+    //       myLevel.src = "./images/level-gold.png"
+    //       myLevel.alt="Gold"
+    //     break;
+    //   default:
+    //     myLevel.src = "./images/level-nfp.png"
+    //     myLevel.alt="Npt for Profit"
+    // };
+    
+
     // Append the section(card) with the created elements
     card.appendChild(h3);
     card.appendChild(portrait);
@@ -52,6 +72,7 @@ const displayCompanies = (companies) => {
     card.appendChild(p2);
     card.appendChild(p3);
     card.appendChild(a);
+    // card.appendChild(myLevel);
     // card.appendChild(p5);
 
     cards.appendChild(card);
@@ -59,3 +80,17 @@ const displayCompanies = (companies) => {
 }; // end of function expression
 
 getCompanyData();
+
+
+const setGrid = document.querySelector('#btnGrid');
+const setList = document.querySelector('#btnList');
+setGrid.addEventListener('click',() => {
+  setGrid.className="active";
+  setList.className="";
+  cards.className='grid';
+});
+setList.addEventListener('click',() => {
+  setList.className="active";
+  setGrid.className="";
+  cards.className='list';
+});

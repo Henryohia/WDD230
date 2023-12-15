@@ -308,7 +308,7 @@
     main.directory{
       display: block;
     }
-    main.directory div.cards {
+    main.directory div.grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       font-size: 0.8rem;

@@ -477,6 +477,56 @@ main {
 
 /* ------------------- directory ------------- */
 
+/*Members goes here*/
+div#theButtons {width: 100%; text-align: center;}
+div#theButtons button.active {background-color: var(--secondary-color);}
+div#theButtons button {
+  margin: 0 1rem; 
+  padding: .7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #dfd3c3;
+}
+div#cards {
+  margin: 0 2vw;
+}
+
+/*GRID layout here*/
+div.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+  justify-content: center;
+  
+}
+/* div.grid section {
+  text-align: center;
+  margin: 1rem 0;
+  border: dashed 1px #f5a434;
+  border-radius: 10px;
+  overflow: hidden;
+} */
+div.grid img:first-child {width: 100%;}
+div.grid h3 {margin: .2rem 0;}
+div.grid p {margin: .2rem 0;}
+
+/*LIST layout here*/
+div.list section {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 3px;
+  align-items: center;
+  margin: .5rem 0;
+  border: dashed 1px #dfd3c3;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: smaller;
+  padding: 20px;
+  background-color: var(--accent3-color);
+}
+div.list img {
+  display: none;
+}
+
 main.directory div.cards {
   text-align: center;
   margin: 10px 10px 20px 10px;
@@ -484,16 +534,20 @@ main.directory div.cards {
   display: block;
 }
 
-main div.cards section {
+div.grid section {
   border: solid 2px tan;
+  display: grid;
   /* background-color: var(--accent2-color); */
   height: auto;
   margin: 20px;
   padding: 10px;
   background-color: var(--accent3-color);
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center
 }
 
-main div.cards img {
+/* main div.cards img {
   filter: blur(0em);
   transition: filter 0.5s;
   padding: 2px;
@@ -501,7 +555,7 @@ main div.cards img {
   box-shadow: 5px 5px 10px 5px #6f7364;
   width: 200px;
   height: auto;
-}
+} */
 a {
   text-decoration: underline;
 }
