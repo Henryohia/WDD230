@@ -9,7 +9,7 @@ const myWeather = "https://api.openweathermap.org/data/2.5/forecast?q=Lagos&unit
 fetch(myWeather)
   .then((response) => response.json())
   .then((allData) => {
-    console.log(allData.list)
+    // console.log(allData.list)
     forecastWeatherB(allData.list)
   }) // end waiting
 
@@ -26,7 +26,7 @@ function forecastWeatherA(weatherResults) {
 function forecastWeatherB(weatherResults) {
   let noontimes2=[]
   weatherResults.forEach((listItem) => {
-    console.log(listItem.dt_txt)
+    // console.log(listItem.dt_txt)
     if (listItem.dt_txt.substring(11, 13) == '00') {
       noontimes2.push(listItem)
     }
